@@ -1,0 +1,8 @@
+.image-container {
+    align-items: center;
+}
+
+.image-container img{
+    max-width: 50%;
+    height: auto; 
+} 
