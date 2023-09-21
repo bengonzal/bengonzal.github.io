@@ -1,18 +1,25 @@
 /* styles.css */
+:root {
+    --primary-color: #CAD2C5;
+    --secondary-color: #52796F; 
+    --accent-color: #6f9b78;
+}
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0; 
-    background-color: #8BBEB2;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     min-height: 100vh;
 }
 
 header {
-    background-color: #1B1B1E;
-    color: #fff;
-    padding: 10px 0;
+    background-color: var(--primary-color); 
+    color: var(--secondary-color);
+    padding: 0px 0;
 }
 
 .header {
@@ -31,8 +38,8 @@ nav ul li {
 }
 
 nav a {
-    text-decoration: none;
-    color: #fff;
+    text-decoration: none; 
+    color: var(--accent-color);
     font-weight: bold;
 }
 
@@ -40,6 +47,7 @@ main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
+    flex-grow: 1;
 }
 
 .intro {
@@ -59,13 +67,18 @@ main {
     margin: 10px 0;
 }
 
+.post a {
+    color: var(--accent-color);
+}
+
 .post time {
-    color: #666;
+    color: var(--accent-color);
 }
 
 footer {
-    background-color: #1B1B1E;
+    background-color: var(--secondary-color
+    );
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 0px 0;
 }
