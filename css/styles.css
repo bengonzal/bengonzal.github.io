@@ -20,6 +20,7 @@ header {
     background-color: var(--primary-color); 
     color: var(--secondary-color);
     padding: 0px 0;
+    font-size: x-large;
 }
 
 .header {
