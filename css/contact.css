@@ -1,0 +1,19 @@
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.social_icons {
+    margin: 10px 0;
+}
+
+.social_icons h1{
+    text-align: center;
+}
+
+.social_icons img { 
+    max-width: 25%; 
+    margin: 15px;
+    height: auto;
+} 
