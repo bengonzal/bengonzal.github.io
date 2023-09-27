@@ -87,3 +87,13 @@ footer {
     display: grid;
     place-items: center; 
 }
+
+.image {
+    display: grid;
+    place-items: center;
+}
+
+.image img { 
+    width: 50%;
+    height: auto;
+}
