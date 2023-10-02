@@ -1,0 +1,47 @@
+/* styles.css */
+:root {
+    --primary-color: #CAD2C5;
+    --secondary-color: #52796F; 
+    --accent-color: #6f9b78;
+}
+
+body { 
+    background-color: var(--primary-color);
+    color: var(--secondary-color); 
+}
+
+header {
+    background-color: var(--primary-color); 
+    color: var(--secondary-color); 
+}   
+
+nav a { 
+    color: var(--accent-color); 
+}  
+
+.blog-posts {
+    margin-top: 20px;
+}
+
+.post {
+    margin-bottom: 20px; 
+}
+
+.post h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.post a {
+    color: var(--accent-color);
+}
+
+.post time {
+    color: var(--accent-color);
+}
+
+footer {
+    background-color: var(--secondary-color
+    ); 
+} 
+  
