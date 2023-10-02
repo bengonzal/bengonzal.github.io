@@ -1,0 +1,82 @@
+/* Reset some default styles */
+body{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+} 
+
+.intro {
+    text-align: center;
+} 
+
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+}
+
+/* Styles for the movie section */
+.movie-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.movie-card {
+    background-color: #000000;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px); /* Three columns with spacing */
+    box-sizing: border-box;
+}
+
+.movie-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.movie-card h3 {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.movie-card p {
+    font-size: 1rem;
+}
+
+.movie-card a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.movie-card a:hover {
+    background-color: #0056b3;
+}
+
+/* Adjust styles for links within movie cards */
+.movie-card a[href^="http"] {
+    background-color: #28a745;
+}
+
+.movie-card a[href^="http"]:hover {
+    background-color: #1e7e34;
+} 
+
