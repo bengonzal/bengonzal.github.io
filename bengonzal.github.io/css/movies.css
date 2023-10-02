@@ -1,0 +1,167 @@
+/* Reset some default styles */
+body{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-color); 
+    color: var(--secondary-color);
+    padding: 0px 0;
+    font-size: x-large;
+}
+
+.header {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none; 
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Create a container for the movie section */
+.movie-section {
+    background-image: url('film-reel-background.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px;
+    color: #fff;
+}
+
+/* Style the movie section heading */
+.movie-section h2 {
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+/* Style the movie cards */
+.movie-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+/* Style the movie card title */
+.movie-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style the movie card description */
+.movie-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Style links inside the movie cards */
+.movie-card a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.movie-card a:hover {
+    color: #ffd700;
+}
+
+/* Create a filmstrip-like navigation menu */
+.filmstrip {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.filmstrip li {
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.filmstrip li:hover {
+    transform: scale(1.2);
+}
+
+/* Style the footer */
+.footer {
+    text-align: center;
+    background-color: #000;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .movie-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Add more styles as needed for your specific content and design preferences */
+
+footer {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    padding: 0px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer ul li {
+    display: inline-block; /* Display list items inline */
+    margin-right: 5px; /* Add some spacing between items */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    vertical-align: middle; /* Align items vertically with the text */
+  }
+  
+  footer ul li img {
+    width: 25px; /* Set a fixed width for the images */
+    height: 25px; /* Set a fixed height for the images */
+  }
