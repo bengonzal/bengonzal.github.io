@@ -97,3 +97,14 @@ footer {
     width: 50%;
     height: auto;
 }
+
+.gif figcaption {
+    font-size: 14px;
+    text-align: center;
+    margin: 10px;
+}
+
+.gif {
+    display: grid;
+    place-items: center;
+}
