@@ -6,18 +6,9 @@
     <title>BenGonz</title>
     <link rel="stylesheet" href="css/styles.css"> <!-- Add your CSS file here -->
 </head>
-<body>  
+<body>   
     <!-- load header -->
-    <!-- Include the content of header.html directly -->
-    <div id="header-container"></div>
-    <script>
-        fetch('/header.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('header-container').innerHTML = html;
-            });
-    </script>
-
+    <iframe src="/header.html" frameborder="0"></iframe>
 
     <main>
         <section class="intro">
