@@ -24,8 +24,7 @@ main {
 }
 
 /* Create a container for the movie section */
-.movie-section {
-    background-image: url('film-reel-background.jpg'); /* Replace with your background image */
+.movie-section { 
     background-size: cover;
     background-repeat: no-repeat;
     padding: 100px;
