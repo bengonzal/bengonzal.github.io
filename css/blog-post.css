@@ -108,3 +108,9 @@ footer {
     display: grid;
     place-items: center;
 }
+
+.imgur {
+    display: grid;
+    place-items: center;
+    margin: 12px 0;
+}
