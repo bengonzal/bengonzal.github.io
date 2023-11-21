@@ -52,6 +52,11 @@ main {
 }
 
 .intro {
+    text-align: left;
+}
+
+.intro h1, h2 {
+    font-size: x-large;
     text-align: center;
 }
 

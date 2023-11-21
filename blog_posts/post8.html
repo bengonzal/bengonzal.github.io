@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css"> 
+
+    <title>ASCII Project</title>
+</head>
+<body>
+    <!-- Load header --> 
+    <iframe src="/header.html" frameborder="0"></iframe>    
+    <main>
+        <h1>ASCII Project</h1>
+        <section class="intro"> 
+            <h3>The purpose of this project is to create ascii art from a given image. Further explanation and exapmles can be seen down below, but the gist of this project is to take an image, apply a grayscale filter, map pixel values from the grayscale picture to an ascii charset, and recreate the image entirely out of ascii characters.</h3>
+            <h2>What problem does this solve?</h2>
+            <p>I thought this idea was fun because I was able to experiment with pictures, and I liked running images through the program and zooming in to see the pictures made up of characters like #,@,_,+, etc. But if you want to talk about REAL WORLD problems...here are some answers ChatGPT helped me come up with:</p>
+            <ul>
+                <li>Text Representation of Images - Images are typically stored as pixel data, and representing them in a text-based format (ASCII characters) can be useful for certain applications. This allows images to be displayed in environments or platforms that support only text, such as some command-line interfaces or text-based web browsers.</li>
+                <li>Aesthetic or Stylistic Rendering - Converting images to ASCII art can be seen as a way to provide a different, often stylized representation of an image. This can be used for artistic purposes or to create visually interesting effects, especially in contexts where traditional images might not be suitable.</li>
+                <li>Nostalgia and Cultural Appeal - ASCII art has a nostalgic appeal, reminiscent of early computer graphics and the ASCII art culture that emerged in the early days of computing. This can be leveraged to create content with a retro or vintage aesthetic.</li> 
+                <li>Security and Privacy - ASCII art has a nostalgic appeal, reminiscent of early computer graphics and the ASCII art culture that emerged in the early days of computing. This can be leveraged to create content with a retro or vintage aesthetic.</li>
+            </ul>
+        </section>
+        <section class="overview">
+            <h2>Overview</h2>
+            <p>As mentioned above, this project was created to transform an image to be re-created entirely out of ascii characters. Once the necessary environment requirements are fulfilled, a user can run the program and select an image to "ascii-tize" and end up with their very own image, entirely out of ascii characters. Given the resolution is kept and the proper media management software is used, the user can zoom in to view the individual ascii characters that compose the entire image and marvel at the little specs that come together to form something complete.</p>
+            <h2>Key features</h2>
+            <p>This program was written with mostly basic features in mind. I wanted the user to be able to customize how "detailed" they wanted their picture to be, so I added a good deal of user-options to fine tune the ascii-art generation until it was juuuuust right and ready to be saved. The following is what the user can find on the UI to help them dial everything in:</p>
+            <ol>
+                <li>Grayscale to ASCII Size Slider</li>
+                    <ul>
+                        <li>This user-selected value can change the variable that maps the grayscale pixel values in the original image to the pixel values in the ascii charset.</li>
+                        <li>Changing this value can have an interesting effect on how compact the ascii characters of the final image are.</li>
+                    </ul>
+                <li>Scale Factor Slider</li>
+                    <ul>
+                        <li>This user-selected value can change end-resolution of the "ascii-tized" image.</li>
+                        <li>Changing this value can scale the original image UP or DOWN depending on the value, which results in a larger or smaller image to work with.</li>
+                    </ul>
+                <li>Font Size Slider</li>
+                    <ul>
+                        <li>This user-selected value can change the font-size of the ascii chars in the final image.</li>
+                        <li>I've found that changing this value can result in "lighter" or "darker" images, depending on the size of the font you decide.</li>
+                    </ul>
+            </ol>
+            <p>Examples further down show just how different images created with different values can be!</p>
+        </section> 
+        <section class="design">
+            <h2>Design and Architecture</h2>
+            <p>Designing/creating this project was fairly easy because there weren't too many "moving parts", so-to-say. The graphical user interface (GUI) was packaged in the same file as the backend implementation to make for an easy working file.</p>
+            <p>I did try my best to keep things modular while working on this project. I went back and fine-tuned functions/methods to keep things flowing nicely. If I were to have a bug in one method, it wouldn't affect the functionality of another method, which was the goal when keeping the program modular.</p>
+            <p>Overall, this program isn't too complicated, so not much needs to be talked about in the design and architecture aspect.</p>
+        </section>
+        <section class="technologies">
+            <h2>Technologies Used</h2>
+            <p>This program was written entirely in Python. Any frameworks/libraries are ones that are easily found with a quick pip-install, so it should be accessible to use if you follow the directions in the README.</p>
+            <ul>
+                <li>Tkinter</li>
+                    <ul>
+                        <li>
+                            Tkinter is a built-in Python library used for creating graphical user interfaces (GUIs). The name "Tkinter" comes from "Tk Interface," as it is a Python interface to the Tk GUI toolkit. Tkinter provides a set of tools and widgets to help developers create desktop applications with graphical user interfaces.
+                        </li>
+                    </ul>
+                <li>PIL/Pillow</li>
+                    <ul>
+                        <li>
+                            Pillow is a powerful Python Imaging Library (PIL) fork that serves as an open-source image processing and manipulation library. It provides extensive functionality for working with images, supporting various file formats and offering a wide range of operations, including opening, manipulating, and saving images.
+                        </li>
+                    </ul>
+                <li>Threading</li>
+                    <ul>
+                        <li>
+                            Python provides a built-in threading module that allows you to create and manage threads. Each thread runs in its own separate space but shares the same data space, allowing threads to communicate with each other more easily than separate processes.
+                        </li>
+                    </ul>
+            </ul>
+            <p>And of course, the honorable mention: </p>
+            <h3>ChatGPT</h3>
+            <p>ChatGPT3.5 was a great deal of help when creating this project. I wasn't entirely familiar with the built-in libraries Python had to offer, nor the ones I had to install using pip. ChatGPT clarified any questions I had and helped explain error codes and design issues throughout the entirety of this project, kind of like a professor would... but less judgemental.</p>
+        </section>
+        <section class="demonstration">
+            <h2>Finally, a Demonstration!</h2>
+            <h3>FullScreen the video so you don't miss any details!</h3> 
+            <!-- youtube video -->
+            <div class="youtube-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gOBQ2NuNa1w?si=mjEOmnjm2V6ssf2m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="challenges">
+            <h2>Challenges</h2>
+            <p>I had a good of amount of challenges when working on this project. Most of my challenges came from a lack of knowledge in Python. Some challenges came from semantic things like using one UI variables in the wrong place and wondering why the program isn't working LOL! To overcome practically every issue I had in this project, I would give myself time away from the screen and debug in my head away from the computer. After cooldown periods, I was able to come back and carefully look over everything and have the focus required to fix this bug or understand that concept. </p>
+            <p>After working on this project from idea to prototype, I gained some insight to what goes into software creation and just how much it takes to create something basic, letalone complicated like the things that run our daily lives.</p>
+        </section>
+        <section class="future">
+            <h2>Future Plans</h2> 
+            <ol>
+                <li>Memory usage</li>
+                    <ul>
+                        <li>This program can use quite a bit of memory, especially if you're using high-resolution images.</li>
+                        <li>In the future, I want to try and make it memory efficient to generate ascii-art images so more users have accessibility to see my work!</li>
+                    </ul>
+                <li>UI Changes</li> 
+                    <ul>
+                        <li>I'm trying to make changes to make the GUI more easily-usable. If your images are too big, most of the interface gets taken up by the original picture, and you don't see what the final image looks like until you already save it, so I'm working towards making the UI interactive where you can zoom in and out without leaving the application.</li>
+                    </ul>
+                <li>Java?</li>
+                    <ul>
+                        <li>Probably the biggest thing I'm working on with the future of this project is porting it over to the Java programming language.</li>
+                        <li>Java is more easily-usable in terms of deployment (at least I think so), so I want it to be as easy as downloading the repo and clicking on an executable file, no commands or external environments required!</li>
+                    </ul>
+            </ol>
+        </section>
+        <section class="conclusion">
+            <h2>In Conclusion,</h2>
+            <p>I'm sure reading this was the best thing in the entire world and not full of jargon or words you didn't understand at all!</p>
+            <p>As casual as this blog is, I wanted to create a page in a presentation format to show off something that I studied for in college! If you've read this far, thank you. It means a lot to me that people are able to use something I've spent time on creating for fun. If you'd like to try and create some ascii-art out of pictures you have, feel free to follow the link below and download the repository to try it for yourself! You should be able to get a working image from following the directions in the README.</p>
+            <button><a href="https://github.com/bengonzal/Python-Scripts/archive/refs/heads/main.zip">Click Here!</a></button>
+        </section>
+        <h1>I hope you enjoyed, and thank you.</h1>
+        <section class="examples">
+            <!-- Image 1 -->
+            <img src="/img/ascii_art_examples/bird.jpg">
+
+            <!-- Image 2 -->
+            <img src="/img/ascii_art_examples/demo.jpeg">
+
+            <!-- Image 3 -->
+            <img src="/img/ascii_art_examples/ascii_font-size-7.jpeg">
+
+            <!-- Image 4 -->
+            <img src="/img/ascii_art_examples/ascii_font-size-15.jpeg"
+
+            <!-- Image 5 -->
+            <img src="/img/ascii_art_examples/1 - b0tQVsl.png">
+
+            <!-- image 6 -->
+            <img src="/img/ascii_art_examples/2 - TR72t5t.jpg"
+
+            <!-- image 7 -->
+            <img src="/img/ascii_art_examples/6 - ChDt8Lj.jpg"
+
+            <!-- image 8 -->
+            <img src="/img/ascii_art_examples/rob.jpeg"
+
+        </section>
+    </main>
+    <!-- load footer -->
+    <iframe src="/footer.html" frameboarder="0"></iframe>
+</body>
+</html>
