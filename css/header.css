@@ -18,10 +18,16 @@ header {
 
 .container {
     max-width: 1200px;
+    padding: 0 auto;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
+}
+
+.container a {
+    text-decoration: none;
+    color: #6f9b78;
 }
 
 h1 {
