@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BenGonz - November</title>
+    <meta name="description" content="A brief description of your blog post"> 
+    <!-- Link to your CSS file (if applicable) -->
+    <link  id="toBeRemoved" rel="stylesheet" href="/css/blog-post.css">
+    <!-- <link  rel="stylesheet" href="/css/styles.css"> -->
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+<body>
+    <!-- load header  -->
+    <header>
+        <div class="container">
+            <a href="/index.html"><h1>BeNGoNZ</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">HoMe</a></li>
+                    <li><a href="/about.html">aBouT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="blog-header">
+            <h1>Learning to work with JavaScript</h1>
+            <p>Published on 11-28-2023</p>
+            <p> You have accessed this on: <span id="currentDate">00/00/0000</span></p>
+        </div> 
+
+        <div>
+            <h2>What is JavaScript?</h2>
+            <h3>JavaScript is a versatile programming language commonly used for web development. It allows you to add interactivity, communicate with servers, and manipulate the DOM (Document Object Model).</h3>
+            <p>Currently, I've been messing around with JavaScript because I believe I've found something I'm starting to be passionate about...accessibility to tools through the internet and webpages. I don't like having proprietary software or things stuck behind paywalls/subscription plans like Microsoft Office tools or softwares. I'm talking about things like the Google Drive products, translation websites, draw.io, etc.</p>
+            <p>While I have an interesting opinion on how Wikipedia manages its donations/funds, and they seemingly are always "on the brink of shutting down" and need donations to survive, I think the central idea that Wikipedia is a website that is for the good of the public where anyone can access information/tools without having to pay.</p>
+            <p>Because of that idea, I've been looking into web development/not having to download things to your computer to use. As easy as it is to use Facebook, Instagram, Spotify, etc. as apps on your phone as you download them, imagine having to download/install apps on your computer the same way just to use them! I don't like that!</p>
+            <p>So here's some of the things I've learned that JavaScript can do today!</p>
+        </div>
+
+        <div class="buttonclicker">
+            <h2>Button Click Counter</h2>
+            <p>This is an attempt to track how many times the following button has been clicked!</p>
+            <button id="clickButton">Click Me!</button>
+            <p id="clickCountLabel">Click count: <span id="clickCount">0</span></p>
+
+            <button id="resetButton">Reset Click Count</button>
+        </div>
+
+        <div id="dynamicElementCreation">
+            <h2>Dynamic Element Creation</h2>
+            <p>This is a paragraph element. There are no paragraph elements beyond this in this div.</p>
+            <button id="createParagraphButton">Create Paragraph</button>
+        </div> 
+
+
+        <div id="deletingElements">
+            <h2>Deleting Elements</h2>
+            <p>Using JavaScript and an associated webpage, I've learned you can remove elements from your webpage at the click of the button. Don't believe me? Try it!</p>
+            <button id="removeHeaderStylesheet">Mess this page up</button>
+            <p>Go ahead and reload the page if you want to put things back to normal!</p>
+        </div>
+
+    </main>
+    
+    <!-- load footer -->
+    <iframe src="/html_components/footer.html" frameborder="0"></iframe>
+
+    <!-- Ensures that the HTML content is loaded before the scripts execute -->
+    <script src="JavaScript/post9.js"></script>
+</body>
+</html>
