@@ -1,16 +1,78 @@
-.image-container {
-    align-items: center;
-}
-
-.image-container img{
-    max-width: 50%;
-    height: auto; 
+:root {
+    --jet: #433E3F;
+    --eerie_black: #252422;
+    --onyx: #303633;
+    --babyPowder: #FFFFFC;
 } 
 
-.my-story {
-    text-align: left;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--onyx);
+    color: var(--babyPowder);
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+    flex-grow: 1;
 }
 
-.purpose {
-    text-align: left;
+/* Header css */
+header { 
+    padding: 10px 0;
 }
+
+.container {  
+    padding: 0 auto;
+    margin-left: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.container a {
+    text-decoration: none; 
+}
+
+.container h1 {
+    margin: auto;
+    margin-right: 72px;
+    color: var(--babyPowder);
+}
+
+.container nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.container nav li {
+    margin-right: 20px;
+    font-size: large;
+}
+
+.container nav a {
+    text-decoration: none; 
+    font-weight: bold;
+    color: var(--babyPowder);
+} 
+
+.intro h1 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+/* image */
+.image-container {
+    display: grid;
+    place-items: center;
+    margin: 24px;  
+    padding: 24px;
+}
+
+.image-container img { 
+    max-width: 50%; 
+    height: auto;
+    border-radius: 20px;
+}
+
+
