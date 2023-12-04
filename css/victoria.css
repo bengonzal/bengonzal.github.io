@@ -71,6 +71,8 @@ button {
     border-radius: 2%;
     max-width: 100%;
     height: auto;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 .tiktok-container {
@@ -124,3 +126,25 @@ header {
     font-weight: bold;
     color: var(--night);
 } 
+
+.color {
+    background-color: white;
+    border-radius: 5%;
+    padding: 10px;
+}
+
+.c1 {
+    color: #B18FCF;
+}
+.c2 {
+    color: #F991CC;
+}
+.c3 {
+    color: #E2AFDE;
+}
+.c4 {
+    color: #8F3985;
+}
+.c5 {
+    color: #EFD9CE;
+}
