@@ -4,12 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     playButton.addEventListener('click', function() {
         if (audioElement.paused) {
-            audioElement.play();
-            playButton.innerHTML = 'Pause Sound';
+            audioElement.play(); 
         } else {
             audioElement.pause();
-            audioElement.currentTime = 0;
-            playButton.innerHTML = 'Play Sound';
+            audioElement.currentTime = 0; 
         }
     });
 });

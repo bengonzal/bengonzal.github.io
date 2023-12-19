@@ -106,7 +106,7 @@ header {
 .container h1 {
     margin: auto;
     margin-right: 72px;
-    color: var(--night);
+    color: var(white);
 }
 
 .container nav ul {
@@ -124,15 +124,15 @@ header {
 .container nav a {
     text-decoration: none; 
     font-weight: bold;
-    color: var(--night);
+    color: var(white);
 } 
 
-.color {
+/* .color {
     background-color: white;
     border-radius: 15px;
     padding: 10px;
     text-align: center;
-} 
+}  */
 
 .color a {
     display: inline-block; 
@@ -140,10 +140,22 @@ header {
     font-size: larger;
 }
 
-.c1 {
-    color: var(--forestGreen);
+.fmaButton {
+    display: grid;
+    place-content: center;
+    margin: 10px;
 }
-.c2 {
-    color: var(--babyPink);
-}   
 
+.show-desc { 
+    max-width: 600px; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.show-desc p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 10px;
+}
