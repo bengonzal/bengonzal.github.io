@@ -1,10 +1,13 @@
 :root { 
     --night: #00120B; 
+    --tyrianPurple: #470024;
+    --palatinate: #5B1865;
+    --poppy: #DA2C38;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--night);
+    background-color: var(--tyrianPurple);
     color: white;
     margin-left: 5%;
     margin-right: 5%;
@@ -101,6 +104,7 @@ header {
 
 .container a {
     text-decoration: none; 
+    color: white;
 }
 
 .container h1 {
@@ -127,17 +131,28 @@ header {
     color: var(white);
 } 
 
-/* .color {
+.color {
     background-color: white;
+    color: var(--night);
     border-radius: 15px;
     padding: 10px;
     text-align: center;
-}  */
+} 
 
 .color a {
     display: inline-block; 
     text-decoration: none;
     font-size: larger;
+}
+
+.c1 {
+    color: var(--tyrianPurple);
+}
+.c2 {
+    color: var(--palatinate);
+}
+.c3 {
+    color: var(--poppy);
 }
 
 .fmaButton {
@@ -153,8 +168,7 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.show-desc p {
-    font-size: 18px;
+.show-desc p { 
     line-height: 1.6;
     color: white;
     margin-bottom: 10px;

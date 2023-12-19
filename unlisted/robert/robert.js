@@ -1,13 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var audioElement = document.getElementById('audioElement');
-    var playButton = document.getElementById('btn');
-
-    playButton.addEventListener('click', function() {
-        if (audioElement.paused) {
-            audioElement.play(); 
-        } else {
-            audioElement.pause();
-            audioElement.currentTime = 0; 
-        }
+    var buttons = document.querySelectorAll('.btn'); 
+    buttons.forEach(function (button) {
+        button.addEventListener('click', function() {
+            var audioElement = button.nextElementSibling;
+            if (audioElement) {
+                if (audioElement.paused) {
+                    audioElement.play();
+                } else {
+                    audioElement.pause();
+                }
+            }
+        });
     });
 });
