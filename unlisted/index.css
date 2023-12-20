@@ -63,7 +63,7 @@ button {
     font-weight: 500;
     color: #ffffff80;
     text-shadow: none;
-    background: transparent;
+    background: rgba(255, 0, 0, 0.5);
     box-shadow: transparent;
     border: 1px solid #ffffff80;
     transition: 0.5s ease;
