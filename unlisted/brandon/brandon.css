@@ -1,0 +1,146 @@
+:root {
+    --cyan: #00FFFF;
+    --gunmetal: #022B3A;
+    --thistle: #E2CFEA;
+    --glaucous: #6184D8;
+    --electricBlue: #51efff;
+} 
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cyan);
+    color: var(--gunmetal);
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+body h1 {
+    font-size: x-large;
+}
+
+main { 
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.post-header {
+    text-align: center;
+} 
+
+.shows a {
+    text-align: center;
+    color: var(--gunmetal);
+}
+
+.img-container {
+    display: grid;
+    place-content: center;
+    margin: auto;
+    overflow: auto;
+}
+
+.img-container img {
+    border-radius: 2%;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.tiktok-container {
+    width: 100%;
+    max-width: 325px;
+    margin: 0 auto;
+}
+
+.tiktok-embed {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Header css */
+header { 
+    padding: 10px 0;
+}
+
+.container {  
+    padding: 0 auto;
+    margin-left: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.container a {
+    text-decoration: none; 
+    color: var(--gunmetal);
+}
+
+.container h1 {
+    margin: auto;
+    margin-right: 72px;
+    color: var(--gunmetal);
+}
+
+.container nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.container nav li {
+    margin-right: 20px;
+    font-size: large;
+}
+
+.container nav a {
+    text-decoration: none; 
+    font-weight: bold;
+    color: var(--gunmetal);
+} 
+
+.color {
+    background-color: white;
+    color: var(--gunmetal);
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+} 
+
+.color a {
+    display: inline-block; 
+    text-decoration: none;
+    font-size: larger;
+} 
+
+.fmaButton {
+    display: grid;
+    place-content: center;
+    margin: 10px;
+}
+
+.show-desc { 
+    max-width: 600px; 
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.show-desc p { 
+    line-height: 1.6;
+    color: var(--gunmetal); 
+}
+
+.c1 {
+    color: var(--electricBlue);
+}
+.c2 {
+    color: var(--gunmetal);
+}
+.c3 {
+    color: var(--glaucous);
+}
