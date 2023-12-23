@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoSe</title>
+    <style>
+        .header {
+            padding: 10px 0;
+        }
+
+        .container {
+            padding: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container a {
+            text-decoration: none;
+        }
+
+        .container h1 {
+            margin: auto;
+            margin-right: 25px;
+            color: white;
+        }
+
+        .container nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .container nav li {
+            margin-right: 20px;
+            font-size: large;
+            color: white;
+            list-style-type: none;
+        }
+
+        .container nav a {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+
+        html, body {
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            line-height: 1.6;
+            height: 100%; 
+            position: relative; 
+        } 
+
+        .background-container {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: url('background.jpg') center/cover no-repeat;
+            filter: blur(3px);
+            height: 100%;
+            z-index: -1;
+        }
+
+        .content-container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .intro {
+            text-align: center;
+        }
+
+        .img-container {
+            display: grid;
+            place-items: center;
+        }
+
+        .img-container img {
+            width: 85%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .poem {
+            text-align: center;
+            padding: 5% 0;
+        }
+
+        .poem-line {
+            margin-bottom: 10px;
+        }
+
+        .who {
+            text-align: center;
+        }
+
+        .favs {
+            text-align: center;
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="background-container"></div>
+    <div class="content-container">
+        <header class="header">
+            <div class="container">
+                <a href="/index.html"><h1>RoSeGLaSS</h1></a>
+                <nav>
+                    <ul>
+                        <li><a href="/index.html">HoMe</a></li>
+                        <li><a href="/about.html">aBouT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="intro">
+                <h2>Welcome to a page about Rose, the love of my life.</h2>
+            </section>
+            <div class="img-container">
+                <img src="ramen.JPG">
+            </div>
+            <div class="poem">
+                <h1>Flowers and Coffee</h1>
+                <div class="poem-line">We met at a shop, no different than any other</div>
+                <div class="poem-line">Unaware of the joint future we have yet to discover.</div>
+                <div class="poem-line">A radiant beauty, she caught my eye from the start.</div>
+                <div class="poem-line">I wished day by day, we'd never be apart.</div>
+                <div class="poem-line">Too shy to confront, to approach and confess..</div>
+                <div class="poem-line">I crafted a post, a bit sneaky I guess.</div>
+                <div class="poem-line">Our shared bond over Zendaya, kind of weird but cute,</div>
+                <div class="poem-line">Was the start of something beautiful, I'd be in constant pursuit.</div>
+                <div class="poem-line">Nearly 3 Christmases later, I'm still just as smitten.</div>
+                <div class="poem-line">I'd never thought a poem like this would ever be written.</div>
+                <div class="poem-line">So here's to many more poems, and adventures and more.</div>
+                <div class="poem-line">I'd share the world with you Rose, it's ours to explore.</div>
+                <div class="poem-line">Here's to many more shops, with a flower and softy,</div>
+                <div class="poem-line">My beautiful Rose, my cup of morning coffee.</div>
+            </div>
+            <section class="who"> 
+                <h1>Who exactly is Rose Glass? </h1>
+                <h2>Rose Glass is many things!</h2>
+                <h3>A Daughter</h3>
+                <h3>A Sister</h3>
+                <h3>A Friend</h3> 
+                <h2>Perhaps most importantly (to me), Rose Glass is...</h2>
+                <h1>My Other Half</h1>
+            </section>
+            <div class="img-container">
+                <img src="beach.JPG">
+                <img src="pieshop.JPG">  
+                <img src="tent.JPG">
+                <img src="tree.JPG"> 
+            </div>
+            <section class="favs">
+                <h1>What are some of Rose's favorite things?</h1>
+                <h2>Rose loves to watch shows!</h2>
+                <h3>Love is Blind</h3>
+                <div class="img-container">
+                    <img src="https://media2.giphy.com/media/Q6V02uf1KOgheVPpyR/giphy.gif?cid=ecf05e47oerbktejlumjjo9nw9wr8hsjqezkb91ai26v1iqn&ep=v1_gifs_search&rid=giphy.gif&ct=g">
+                </div>
+                <h3>Lost</h3>
+                <div class="img-container">
+                    <img src="https://i.gifer.com/origin/4e/4e9c865a14e993f66eeefcfc4fc813b5_w200.gif">
+                </div>
+                <h3>Parks and Recreation</h3>
+                <div class="img-container">
+                    <img src="https://cdn.mos.cms.futurecdn.net/zDEGAKbGAZcmb6QxiU3Yha.gif">
+                </div>
+                <h2>Rose loves to watch movies!</h2>
+                <h3>The Kingsman Movies</h3>
+                <div class="img-container">
+                    <img src="https://www.lifeandstylemag.com/wp-content/uploads/2016/08/kingsman-gif-5.gif?quality=86&strip=all">
+                    <img src="https://i.pinimg.com/originals/88/5b/3f/885b3f1da49bf7a4d5f41a08aa8beef8.gif">
+                    <img src="https://i.pinimg.com/originals/2f/6c/c9/2f6cc968a711a52c7b78a7946c7c2694.gif">
+                    <img src="https://gifdb.com/images/high/pedro-pascal-whiskey-kingsman-the-golden-circle-bu3eo5lwafix3bso.gif">
+                    <img src="https://64.media.tumblr.com/02f37bb5abf8233091c0d4eeba0c6908/57d3928c474aefd0-01/s540x810/00f16dcc13a37b38b6e9de20d062fa8bc8ee2783.gif">
+                </div>
+                <h4>Wait a minute...</h4>
+                <h4>I can see why she likes those movies so much.</h4>
+                <h2>Rose loves Unicorns!</h2>
+                <div class="img-container">
+                    <img src="https://media4.giphy.com/media/j0kQJxo5mzGYb4EvWK/giphy.gif">
+                    <img src="https://www.icegif.com/wp-content/uploads/unicorn-icegif-1.gif">
+                    <img src="https://media3.giphy.com/media/HULqwwF5tWKznstIEE/giphy.gif?cid=ecf05e47icl0s0g34pvqxgvu5tv4cslw1t8zmnbe3wm2fp3s&ep=v1_gifs_search&rid=giphy.gif&ct=g">
+                    <img src="https://media3.giphy.com/media/jligj6D2MCqOI/giphy.gif?cid=ecf05e47y0leu2azldjeycusv7xsx509egemxrd5e2uaexqk&ep=v1_gifs_search&rid=giphy.gif&ct=g">
+                </div>
+                <h2>I would like to think...Rose loves me!</h2>
+                <div class="img-container">
+                    <img src="heart.jpg">
+                </div>
+            </section>
+            <section class="letter">
+                <h2>A Letter to Rose</h2>
+                <p>Dear Rose,</p>
+                <p>Oh my goodness, a poem AND a letter? You are one lucky gal! I'll have you know, I cried when I was writing that poem...</p>
+                <p>Thank you for making me the luckiest person on the planet. Nearly 3 Christmases together and I still get excited pouring myself into things to make for you. I know you love handwritten letters, but seeing as you'll be a bit of a distance from me this year, I guess this will have to do. I love you, my beautiful Rose. Everyday you make me feel as if I'm truly loved, even on days we are extra angy. I am not only going to give you the physical presents I got for you this year, but this is a welcome addition that I thought of. I haven't decided to give this to you on Christmas Day, or on our Christmas after you get back! Heck, maybe I'll even give this to you today!</p>
+                <p>When I think back to when we first met and compare it to now, I honestly cannot believe the changes. We used to be so different. You were a lead at QC, and I was a little baby barista! Talk about an inappropriate workplace relationship! Just kidding hehe, you didn't even notice me back then, but I sure did notice you ( ' 3 ' ) </p>
+                <p>As cute as I thought you were back then, you've only grown more beautiful as the days have gone by. I see the development you've made since we first started talking, and I am so proud of how much you've grown. You've also made ME grow, and that's not an easy thing to do! I see the hard work you pour your everything in, whether it's work, your friendships, and especially our relationship. I see you. I appreciate everything about you. Of course I say it, but I want you to really take these next few words you read in...</p>
+                <p>I love you. I don't think I could ever be as happy as I am now, even on my worst days. You are the light at the end of the tunnel. You are the reason I get up in the morning (as early as you make me hehe) and the comfort I fall asleep to. I can't wait for what our future holds together because I know with you, anything will be an adventure.</p>
+                <h2>Merry Christmas Baby!</h2>
+                <h2>Love, </h2>
+                <h2>Your Benny Boo <3</h2>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
