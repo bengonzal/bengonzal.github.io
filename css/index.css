@@ -110,22 +110,20 @@ header {
     text-decoration: none; 
 }
 
-.container h1 {
-    margin: auto;
-    margin-right: 72px;
+.container h1 { 
+    margin: auto; 
     color: var(--babyPowder);
 }
 
 .container nav ul {
     list-style: none;
-    margin: 0;
     padding: 0;
     display: flex;
+    margin-left: 15px;
 }
 
 .container nav li {
-    margin-right: 20px;
-    font-size: large;
+    margin-right: 5%;  
 }
 
 .container nav a {
