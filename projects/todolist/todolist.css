@@ -69,8 +69,10 @@ header {
 
 /* input-wrapper by adamgiebl from https://uiverse.io/adamgiebl/ordinary-impala-4 */
 .input-wrapper {
-    margin: 1%;
-    max-width: 50%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 3%;
+    max-width: 100%;
     display: flex;
     align-items: center; 
     justify-content: space-between;
@@ -106,8 +108,7 @@ header {
   }
 
   /* button by suda-code from https://uiverse.io/suda-code/loud-badger-55 */
-  button {
-    margin: 15px;
+  button { 
     padding: 12.5px 30px;
     border: 0;
     border-radius: 100px;
@@ -188,5 +189,9 @@ header {
     border-width: 0 0.15em 0.15em 0;
     border-radius: 0em;
     transform: rotate(45deg);
+  }
+
+  .add-item-button {
+    margin-top: 10px;
   }
   
