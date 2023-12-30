@@ -107,6 +107,7 @@ header {
 
   /* button by suda-code from https://uiverse.io/suda-code/loud-badger-55 */
   button {
+    margin: 15px;
     padding: 12.5px 30px;
     border: 0;
     border-radius: 100px;
