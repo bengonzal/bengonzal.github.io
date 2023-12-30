@@ -1,0 +1,43 @@
+// get reference to button and label element using their id
+var addItemButton = document.getElementById("addItemButton");
+var toDoListDiv = document.getElementById("toDoListDiv");
+
+function addItem() {
+    // create a new input-wrapper div
+    var newInputWrapperDiv = document.createElement("div");
+    newInputWrapperDiv.setAttribute("class", "input-wrapper");  
+
+    // create a new input element
+    var newInput = document.createElement("input");
+    newInput.setAttribute("type", "text");
+    newInput.setAttribute("placeholder", "Enter your task...");
+    newInput.setAttribute("name", "text");
+    newInput.setAttribute("class", "input"); 
+
+    // create a new label element 
+    var newLabel = document.createElement("label");
+    newLabel.setAttribute("class", "container");
+
+    // create a new input element for label 
+    var newCheckedInput = document.createElement("input"); 
+    newCheckedInput.setAttribute("type", "checkbox");
+
+    // create a new checkmark div
+    var newCheckmarkDiv = document.createElement("div");
+    newCheckmarkDiv.setAttribute("class", "checkmark");
+
+    // append the newCheckedInput and newCheckmarkDiv to label
+    newLabel.appendChild(newCheckedInput);
+    newLabel.appendChild(newCheckmarkDiv);
+
+    // append the input element to the new input-wrapper div
+    newInputWrapperDiv.appendChild(newInput);
+
+    // append the label element to the new input-wrapper div
+    newInputWrapperDiv.appendChild(newLabel);
+
+    // append the new div to the target div
+    toDoListDiv.appendChild(newInputWrapperDiv);
+} 
+
+addItemButton.addEventListener("click", addItem);

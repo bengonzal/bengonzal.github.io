@@ -8,7 +8,7 @@
     </head>
     <body>
         <header>
-            <div class="container">
+            <div class="header-container">
                 <a href="/index.html"><h1>BeNGoNZ</h1></a>
                 <nav>
                     <ul>
@@ -19,5 +19,22 @@
                 </nav>
             </div>
         </header> 
+        <div class="intro">
+            <h1>ToDaY'S ToDoLiST</h1>
+        </div> 
+
+        <div class="todolist-container" id="toDoListDiv">
+            <div class="input-wrapper">
+                <input type="text" placeholder="Enter your task..." name="text" class="input"> 
+                <label class="container">
+                    <input type="checkbox">
+                    <div class="checkmark"></div>
+                </label>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="add-item-button" id="addItemButton">Add Item</button>
+        </div>
+        <script src="todolist.js"></script> 
     </body>
 </html>
