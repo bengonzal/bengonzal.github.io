@@ -15,50 +15,8 @@ body {
     flex-grow: 1;
 }
 
-/* Header css */
-header { 
-    padding: 10px 0;
-}
-
-.container {  
-    padding: 0 auto;
-    margin-left: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-
-.container a {
-    text-decoration: none; 
-}
-
-.container h1 {
-    margin: auto;
-    margin-right: 72px;
-    color: var(--babyPowder);
-}
-
-.container nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.container nav li {
-    margin-right: 20px;
-    font-size: large;
-}
-
-.container nav a {
-    text-decoration: none; 
-    font-weight: bold;
-    color: var(--babyPowder);
-} 
-
 .intro h1 {
-    text-align: center;
-    font-size: xx-large;
+    text-align: center; 
 }
 
 /* image */
@@ -73,6 +31,10 @@ header {
     max-width: 50%; 
     height: auto;
     border-radius: 20px;
+}
+
+.custom-text-color {
+    color: var(--babyPowder);
 }
 
 
