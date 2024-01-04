@@ -111,7 +111,7 @@ header {
   button { 
     padding: 12.5px 30px;
     border: 0;
-    border-radius: 100px;
+    border-radius: 30px;
     background-color: lightcoral;
     color: var(--eggshell);
     font-weight: Bold;
@@ -193,5 +193,9 @@ header {
 
   .add-item-button {
     margin-top: 10px;
+  }
+
+  .custom-text-color {
+    color: lightcoral;
   }
   
