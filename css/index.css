@@ -6,14 +6,13 @@
     --babyPowder: #FFFFFC;
 }  
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
+body { 
     background-color: var(--onyx);
     color: var(--babyPowder);
 }
 
 main { 
-    max-width: 80%;
+    max-width: 95%;
     margin: auto;
     padding: 20px;
     flex-grow: 1;
@@ -21,8 +20,7 @@ main {
 
 .intro {
     padding: 6px;
-    text-align: center;  
-    text-decoration: underline;
+    text-align: center;
 }
 
 .blog-posts {
@@ -62,79 +60,21 @@ button {
     text-shadow: none;
     background: transparent;
     box-shadow: transparent;
-    border: 1px solid #ffffff80;
-    transition: 0.5s ease;
+    border: 1px solid #ffffff80; 
     user-select: none;
-  }
-  
-#btn:hover,:focus {
-    color: #ffffff;
-    background: #008cff;
-    text-transform: uppercase;
-    border: 1px solid #008cff;
-    text-shadow: 0 0 5px #ffffff,
-                0 0 10px #ffffff,
-                0 0 20px #ffffff;
-    box-shadow: 0 0 5px #008cff,
-                0 0 20px #008cff,
-                0 0 50px #008cff,
-                0 0 100px #008cff;
-} 
-
-.latest-post {
-    margin: 0px 0;
-    margin-bottom: 20px;
-    padding: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s;
-}  
-
-.latest-post:hover {
-    transform: scale(1.1);
-}  
-
-/* Header css */
-header { 
-    padding: 10px 0;
 }
-
-.container {  
-    padding: 0 auto;
-    margin-left: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-
-.container a {
-    text-decoration: none; 
-}
-
-.container h1 { 
-    margin: auto; 
-    color: var(--babyPowder);
-}
-
-.container nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin-left: 15px;
-}
-
-.container nav li {
-    margin-right: 5%;  
-}
-
-.container nav a {
-    text-decoration: none; 
-    font-weight: bold;
-    color: var(--babyPowder);
-} 
 
 .blog-posts a {
     text-decoration: none;
     color: var(--babyPowder);
 }
+
+.custom-navbar {
+    background-color: var(--onyx); 
+}
+
+.custom-text-color {
+    color: var(--babyPowder);
+} 
 
 

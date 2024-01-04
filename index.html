@@ -4,28 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BenGonz</title>
-    <link rel="stylesheet" href="/css/index.css"> <!-- Add your CSS file here --> 
-</head>
-<body>   
-    <!-- load header -->
-    <header>
-        <div class="container">
-            <a href="/index.html"><h1>BeNGoNZ</h1></a>
-            <nav>
-                <ul>
-                    <li><a href="/index.html">HoMe</a></li>
-                    <li><a href="/about.html">aBouT</a></li>
-                    <li><a href="/projects/index.html">PRoJeCTS</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/index.css">
 
+</head>
+<body>    
+    <nav class="navbar navbar-expand-sm navbar-light custom-navbar">
+        <div class="container">
+            <a class="navbar-brand custom-text-color" href="/index.html">BeNGoNZ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link custom-text-color" href="/index.html">HoMe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-text-color" href="/about.html">aBouT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-text-color" href="/projects/index.html">PRoJeCTS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
     <main>
         <section class="intro"> 
             <h3>Welcome to my personal blog where I share my thoughts, ideas, and experiences.</h3>
         </section>
-
+        
         <section class="blog-posts">
             <!-- latest post -->
             <article class="post">
@@ -39,7 +50,7 @@
                     <img src="https://media3.giphy.com/media/26ufnwz3wDUli7GU0/giphy.gif?cid=ecf05e47xmy9p5s4pvwxmv3cd9x203lhw2nrg8z05m3wunim&ep=v1_gifs_search&rid=giphy.gif&ct=g">   
                 </div>
             </article>
-
+            
             <article class="post">
                 <div class="post-content">
                     <h2>What would you be interested to work in? </h2>
@@ -50,7 +61,7 @@
                     <img src="https://media0.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif?cid=ecf05e47dgq5tlqzl1jx0mnag0n21l4eeigsii1k27lybsgn&ep=v1_gifs_search&rid=giphy.gif&ct=g">   
                 </div>
             </article>
-
+            
             <article class="post">
                 <div class="post-content">
                     <h2>Working on redesigning the website!</h2>
@@ -61,8 +72,8 @@
                     <img src="https://media0.giphy.com/media/cIWnDtConYRFPxmmah/giphy.gif?cid=ecf05e478q1zaof7zfqrdtudfwx0l7w3nrqowtlvn31gcd4x&ep=v1_gifs_search&rid=giphy.gif&ct=g">
                 </div>
             </article>
-
-
+            
+            
             <article class="post">    
                 <div class="post-content">
                     <h2>Learning to work with JavaScript!</h2>
@@ -74,7 +85,7 @@
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png">
                 </div>
             </article>
-
+            
             <article class="post"> 
                 <div class="post-content">
                     <h2>ASCII Project</h2>
@@ -87,44 +98,44 @@
                 </div>
                 
             </article>
-
+            
             <article class="post">   
                 <div class="post-content">
                     <h2>Washington Trip</h2>
                     <p>Come see Rose and I on our adventures in Washington this past week!</p>
                     <button id="btn"><a href="blog_posts/post7.html">read more</a> </button>
-
+                    
                 </div>
                 <div class="thumbnail">
                     <img src="img/me/Washington Trip with Rose - Imgur.jpg">
                 </div>
                 
             </article>
-
+            
             <article class="post">
                 <div class="post-content">
                     <h2>Life Updates</h2>
                     <p>Published on: <time datetime="2023-11-7">November 7, 2023</time></p>
-                        <p>Some updates on my life and what I've been up to for the past month!</p>
-                        <button id="btn"><a href="blog_posts/post6.html">read more</a> </button>
+                    <p>Some updates on my life and what I've been up to for the past month!</p>
+                    <button id="btn"><a href="blog_posts/post6.html">read more</a> </button>
                 </div>
                 <div class="thumbnail">
                     <img src="https://www.kroger.com/product/images/large/front/0003000006322">
                 </div>
             </article>
-
+            
             <article class="post">
                 <div class="post-content">
                     <h2>My thoughts on Artifical Intelligence</h2>
-                        <p>Published on: <time datetime="2023-10-19">October 19, 2023</time></p>
-                        <p>Checkout my thoughts on artificial intelligence and how I think it should be used!</p>
-                        <button id="btn"><a href="blog_posts/post5.html">read more</a> </button>
+                    <p>Published on: <time datetime="2023-10-19">October 19, 2023</time></p>
+                    <p>Checkout my thoughts on artificial intelligence and how I think it should be used!</p>
+                    <button id="btn"><a href="blog_posts/post5.html">read more</a> </button>
                 </div>
                 <div class="thumbnail">
                     <img src="https://media1.giphy.com/media/ckJF143W1gBS8Hk833/giphy.gif?cid=ecf05e479sk1kjimzgnhqpoeghlcyju3geycaaxgs2ixrfb8&ep=v1_gifs_search&rid=giphy.gif&ct=g">
                 </div>
             </article>
-
+            
             <article class="post">
                 <div class="post-content">
                     <h2>New sections on hold, I have an idea! Also, let's catch up!</h2>
@@ -136,7 +147,7 @@
                     <img src="https://media0.giphy.com/media/YTJXDIivNMPuNSMgc0/giphy.gif?cid=ecf05e47qd3pykvq6azlntb6vj9r3nq2trmslpo16qlwg53u&ep=v1_gifs_search&rid=giphy.gif&ct=g">
                 </div>
             </article>
-
+            
             <article class="post">
                 <div class="post-content">
                     <h2>A day at Mortimer Farms!</h2>
@@ -148,19 +159,19 @@
                     <img src="/img/MortimerFarms/Smiley_Rose.JPG">
                 </div>
             </article> 
-
+            
             <article class="post">
                 <div class="post-content">
                     <h2>Adding new sections to the blog</h2>
-                <p>Published on: <time datetime="2023-09-22">September 22, 2023</time></p>
-                <p>I had a sudden burst of inspiration and found ways to spice up the blog! I'm going be adding some new sections to the blog. Things like my interests, my zombie boy, video games? Interested?</p>
-                <button id="btn"><a href="blog_posts/post2.html">read more</a> </button>
+                    <p>Published on: <time datetime="2023-09-22">September 22, 2023</time></p>
+                    <p>I had a sudden burst of inspiration and found ways to spice up the blog! I'm going be adding some new sections to the blog. Things like my interests, my zombie boy, video games? Interested?</p>
+                    <button id="btn"><a href="blog_posts/post2.html">read more</a> </button>
                 </div>
                 <div class="thumbnail">
                     <img src="https://media0.giphy.com/media/2tKbmvjhGD5dIKh0ri/giphy.gif?cid=ecf05e47lytua7g5qljemrmxo95cfylz1xw6uhnveqr5d5a9&ep=v1_gifs_search&rid=giphy.gif&ct=g">
                 </div>
             </article>
-
+            
             <article class="post">
                 <div class="post-content">
                     <h2>Getting started with this!</h2>
@@ -173,9 +184,8 @@
                 </div>
             </article>  
         </section>
-    </main>
-
-    <!-- load footer -->
-    <!-- <iframe src="html_components/footer.html" frameborder="0"></iframe>   --> 
+    </main> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
