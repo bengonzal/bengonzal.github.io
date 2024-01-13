@@ -6,6 +6,19 @@
     <title>BenGonz</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/index.css"> <!-- Add your CSS file here --> 
+    <link rel="stylesheet" href="pact/comic_button.css">
+    <style>
+        .intro {
+            margin-bottom: 25px;
+        }
+        .comic-button {
+            background-color: cornflowerblue;
+        }
+        .comic-button a {
+            text-decoration: none; 
+            color: black;
+        }
+    </style>
 </head>
 <body>   
     <!-- load header -->
@@ -37,21 +50,34 @@
         </section> 
         <article class="post">
             <div class="post-content">
-                <h2>ToDoLiST</h2>
+                <h2>PACT! - Plan a camping trip!</h2>
                 <h3>Status: In development</h3>
+                <p>The purpose of this project is to create a walkthrough that helps you plan a camping trip!</p>
+                <button class="comic-button"><a href="pact/pact.html">Check it out!</a></button>
+            </div>
+            <div class="thumbnail">
+                <img src="/img/projects/camping.jpg">
+            </div>
+        </article>
+        <hr>
+        <article class="post">
+            <div class="post-content">
+                <h2>ToDoLiST</h2>
+                <h3>Status: Complete</h3>
                 <p>The purpose of this project is to create a simple todolist that allows the user to type tasks, mark tasks complete, and add more tasks if necessary.</p>
-                <button id="btn"><a href="todolist/todolist.html">read more</a></button>
+                <button class="comic-button"><a href="todolist/todolist.html">read more</a></button>
             </div>
             <div class="thumbnail">
                 <img src="/img/projects/todolist_screenshot.png">
             </div>
         </article> 
+        <hr>
             <article class="post"> 
                 <div class="post-content">
                     <h2>ASCII Project</h2>
                     <h3>Status: Haitus</h3>
                     <p>The purpose of this project is to create ascii art from a given image. Further explanation and examples can be seen down below, but the gist of this project is to take an image, apply a grayscale filter, map pixel values from the grayscale picture to an ascii charset, and recreate the image entirely out of ascii characters.</p> 
-                    <button id="btn"><a href="blog_posts/post8.html">read more</a> </button>
+                    <button class="comic-button"><a href="blog_posts/post8.html">read more</a> </button>
                 </div>
                 <div class="thumbnail">
                     <img src="/img/ascii_art_examples/demo.jpeg">
