@@ -1,8 +1,8 @@
 /* Button by Gautammsharma - https://uiverse.io/Gautammsharma/wicked-cobra-3 */
 .comic-button {
     display: inline-block;
-    padding: 5px 20px;
-    margin: 5%;
+    padding: 10px 10px; 
+    margin: 3px;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
@@ -28,4 +28,45 @@
     box-shadow: none;
     transform: translateY(4px);
   }
+
+.radio-button {
+    display: inline-block;
+    padding: 10px 10px; /* Adjust padding for better appearance */
+    margin: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 2px solid #000;
+    border-radius: 50px; /* Make it more circular */
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.radio-button:hover {
+    background-color: lightcoral;
+    color: black;
+    border: 2px solid black;
+    padding:  10px 15px;
+    box-shadow: 5px 5px 0px black;
+}
+
+.radio-button:active {
+  background-color: black;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+.radio-input {
+  display: none; 
+}
+
+.radio-input:checked + label{
+  background-color: lightcoral;
+  color: white;
+  box-shadow: none;
+}
   
