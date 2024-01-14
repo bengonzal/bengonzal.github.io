@@ -1,0 +1,96 @@
+:root {
+    --summer: #F5E960;
+    --spring: #7DDE95;
+    --fall: #FDA05E;
+    --winter: #95EEEF;
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}  
+
+.navButtons {
+    text-align: center;
+}
+
+.centered-container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.title h1{ 
+    margin: 15%;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.centered-container h1 {
+    margin-bottom: 25px;
+}
+
+
+/* hide all sections by default */
+.content {
+    display: none;
+}
+
+/* display the active content section */
+.content.active {
+    display: block;
+}
+
+/* season stuff */
+.season-selection { 
+    margin: 10%;
+}
+
+.season-icon {
+    display: inline-block;  
+    box-sizing: border-box;
+    cursor: pointer; 
+}
+
+.season-icon img{
+    margin: 15px;
+    max-width: 110px;
+    padding: 15px;
+    border: 2px solid black; 
+    border-radius: 25px; 
+    box-shadow: 5px 5px 0px #000; 
+    transition: all 0.3s ease;
+} 
+
+.season-icon img:hover {  
+    box-shadow: 5px 5px 0px black;
+
+}
+
+.season-icon img:active { 
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+#summer img {
+    background-color: var(--summer);
+}
+
+#spring img {
+    background-color: var(--spring);
+}
+
+#fall img {
+    background-color: var(--fall);
+}
+
+#winter img {
+    background-color: var(--winter);
+}
+

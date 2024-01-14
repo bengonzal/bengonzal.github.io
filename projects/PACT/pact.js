@@ -26,4 +26,21 @@ function selectSeason(season) {
     
     document.body.style.backgroundColor = backgroundColor; 
   }
-  
+
+
+function selectSection(sectionIdInput) {
+  // remove "Input" from sectionId
+  let sectionId = sectionIdInput.replace("Input", '');
+
+  // remove 'active' class from all content sections
+  document.querySelectorAll('.content').forEach((section) => {
+    section.classList.remove('active');
+  });
+
+  // add 'active' class to the selected content section
+  document.getElementById(sectionId).classList.add('active');
+
+  // scroll to the selected content section
+  const selectedSection = document.getElementById(sectionId);
+  selectedSection.scrollIntoView({ behavior: 'smooth', block: 'start'});
+}
