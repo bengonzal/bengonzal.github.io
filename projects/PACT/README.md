@@ -1,4 +1,6 @@
 # PACT! - Plan A Camping Trip!
+## Benjamin Gonzalez Jr
+### 1/13/2024 - In development
 
 ## Planning a camping trip with ideas from chatGPT: 
 ### Camping Trip Planning Guide
