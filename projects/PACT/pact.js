@@ -1,4 +1,5 @@
 function selectSeason(season) {
+    var seasonMessageElement = document.getElementById("seasonMessage");
     let seasonMessage;
     let backgroundColor; 
   
@@ -24,6 +25,7 @@ function selectSeason(season) {
         backgroundColor = 'white';
     }
     
+    seasonMessageElement.textContent = seasonMessage;
     document.body.style.backgroundColor = backgroundColor; 
   }
 

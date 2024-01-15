@@ -21,13 +21,13 @@ body {
 }
 
 .centered-container {
-    width: 50%;
+    width: 85%;
     margin: auto;
     text-align: center;
 }
 
 .title h1{ 
-    margin: 15%;
+    margin: 8%;
     font-weight: bolder;
     font-size: xx-large;
 }
@@ -93,4 +93,34 @@ body {
 #winter img {
     background-color: var(--winter);
 }
+
+.form-group {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+.form-group label { 
+    display: block;
+    width: 25%; 
+    font-size: x-large;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 20px;  
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 35px;
+    font-size: 24px; 
+    box-shadow: 5px 5px 0px black; 
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: lightcoral;
+    box-shadow: 5px 5px 0px lightcoral;
+}
+
+
 

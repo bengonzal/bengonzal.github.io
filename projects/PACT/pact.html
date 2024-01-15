@@ -38,23 +38,21 @@
             <input type="radio" name="navigation" id="section1Input" class="radio-input">
             <label for="section1Input" class="radio-button" onclick="selectSection('section1')">Season</label>
 
-            <input type="radio" name="navigation" id="section2Input" class="radio-input" >
-            <label for="section2Input" class="radio-button" onclick="selectSection('section2')">Weather</label>
+            <input type="radio" name="navigation" id="section2Input" class="radio-input">
+            <label for="section2Input" class="radio-button" onclick="selectSection('section2')">Location & Weather</label> 
 
-            <input type="radio" name="navigation" id="section3Input" class="radio-input" >
-            <label for="section3Input" class="radio-button" onclick="selectSection('section3')">Location</label>
+            <input type="radio" name="navigation" id="section3Input" class="radio-input">
+            <label for="section3Input" class="radio-button" onclick="selectSection('section3')">Activities</label>
 
-            <input type="radio" name="navigation" id="section4Input" class="radio-input" >
-            <label for="section4Input" class="radio-button" onclick="selectSection('section4')">Activities</label>
-
-            <input type="radio" name="navigation" id="section5Input" class="radio-input" >
-            <label for="section5Input" class="radio-button" onclick="selectSection('section5')">Equipment</label>
+            <input type="radio" name="navigation" id="section4Input" class="radio-input">
+            <label for="section4Input" class="radio-button" onclick="selectSection('section4')">Equipment</label>
         </div>
 
         <section id="section1" class="content">
             <div id="container" class="centered-container"> 
                 <div class="title">
                     <h1>Season</h1>
+                    <h2 id="seasonMessage"></h2>
                 </div>
     
                 <div class="season-selection"> 
@@ -81,7 +79,21 @@
         </section>
 
         <section id="section2" class="content">
+            <div id="container" class="centered-container">
+                <div class="title">
+                    <h1>Location & Weather</h1>
+                    <h2 id="location_weather"></h2>
+                </div>
 
+                <div class="form-group">
+                    <label for="cityInput" class="text-label">City: </label>
+                <input type="text" name="city" id="cityInput" class="text-input">
+                </div>
+                <div class="form-group">
+                    <label for="stateInput" class="text-label">State: </label>
+                <input type="text" name="state" id="stateInput" class="text-input">
+                </div>
+            </div>
         </section>
 
         <section id="section3" class="content">
@@ -90,11 +102,7 @@
     
         <section id="section4" class="content">
 
-        </section>
-
-        <section id="section5" class="content">
-
-        </section>
+        </section> 
     </main>
     
     <!-- bootstrap scripts go Here -->
