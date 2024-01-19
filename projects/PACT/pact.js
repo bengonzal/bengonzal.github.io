@@ -45,4 +45,4 @@ function selectSection(sectionIdInput) {
   // scroll to the selected content section
   const selectedSection = document.getElementById(sectionId);
   selectedSection.scrollIntoView({ behavior: 'smooth', block: 'start'});
-}
+} 
