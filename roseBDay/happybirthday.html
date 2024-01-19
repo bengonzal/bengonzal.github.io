@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="A brief description of your blog post">  
+    <link rel="stylesheet" href="/projects/PACT/comic_button.css">
+    <style> 
+        body { 
+            background-color:  rgba(255, 255, 0, 0.603);
+            font-family: 'Courier New', Courier, monospace;
+            color: pink;
+            text-align: center;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            margin: 50px;
+        }     
+
+        .img-container {  
+            display: grid;
+            place-content: center;
+            margin: auto;
+            overflow: auto;
+        }
+
+        .img-container img{
+            border-radius: 10px;
+            border: 1px transparent black;
+            max-width: 75%;
+            height: auto;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        .coupon-card {
+            display: inline-block;
+            padding:  10px 15px;
+            border: 2px solid black;
+            border-radius: 25px;
+            height: 200px; 
+            margin-left: 10%;
+            margin-right: 10%;
+            text-align: center;
+            background: yellow;
+            box-shadow: 5px 5px 0px black;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>  
+    
+    <main> 
+        <article>
+            <div class="button-container">
+                <audio id="birthdaySong" src="/media/HAPPY BIRTHDAY ROSE! - EPIC Happy Birthday Song (128 kbps).mp3"></audio>
+                <button class="comic-button" onclick="playSong()">HAPPY BIRTHDAY BABY</button>
+            </div>
+            <div id="sectionId">
+                <h1>HAPPY 22ND BIRTHDAY MY BEAUTIFUL LOVELY ROSE!!!!</h1>
+                <div class="img-container">
+                    <img src="/img/birthday_unicornb.jpg">
+                </div>
+                <h1>I love you so much baby!</h1>
+                <h2>I wish you the happiest of birthdays today, and for the years to come!</h2>
+                <h3>I wanted to make this a bit more complicated but I also didn't want to make you spend too much time by yourself in the room, so this is something I threw together.</h3>
+                <h4>Check these out: </h4>
+            </div>
+
+            <div class="coupon-card">
+                <h2>!!! BDAY COUPON !!!</h2>
+                <h1>VALID FOR INFINITE BACKRUBS</h1>
+                <h3>USE WISELY</h3>
+            </div>
+            <div class="coupon-card">
+                <h2>!!! BDAY COUPON !!!</h2>
+                <h1>VALID FOR INFINITE FOOTRUBS</h1>
+                <h3>USE WISELY</h3>
+            </div>
+            <div class="coupon-card">
+                <h2>!!! BDAY COUPON !!!</h2>
+                <h1>VALID FOR ONE NIGHT AT THE CLUB W BENNYBOO</h1>
+                <h3>USE WISELY</h3>
+            </div>
+        </article>
+    </main> 
+
+    <script src="happybirthday.js"></script>
+</body>
+</html>
