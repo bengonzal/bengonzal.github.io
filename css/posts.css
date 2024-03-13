@@ -12,7 +12,7 @@ body {
 }
 
 main { 
-    max-width: 95%; 
+    max-width: 90%; 
     margin: auto;
 }
 
@@ -95,9 +95,4 @@ button {
     text-decoration: none; 
     font-weight: bold;
     color: var(--night);
-} 
-
-.youtube-video {
-    display: grid;
-    place-items: center; 
-}
+}  
